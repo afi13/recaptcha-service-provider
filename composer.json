@@ -1,11 +1,15 @@
 {
-    "name": "sergiors/recaptcha-service-provider",
+    "name": "inetprocess/silex-recaptcha-service-provider",
     "description": "ReCaptcha for Silex",
     "license": "MIT",
     "authors": [
         {
             "name": "Sérgio Rafael Siqueira",
             "email": "sergio@inbep.com.br"
+        },
+        {
+            "name": "Rémi Sauvat",
+            "email": "remi.sauvat@inetprocess.com"
         }
     ],
     "require": {
