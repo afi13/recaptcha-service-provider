@@ -5,7 +5,6 @@ namespace Sergiors\Silex\Validator\Constraints;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
-use ReCaptcha\ReCaptcha;
 
 /**
  * @author Sérgio Rafael Siqueira <sergio@inbep.com.br>
@@ -28,7 +27,7 @@ final class RecaptchaValidator extends ConstraintValidator
      */
     public function __construct($secretkey, RequestStack $requestStack)
     {
-        $this->recaptcha = new ReCaptcha($secretkey);
+        $this->recaptcha = new \ReCaptcha\ReCaptcha($secretkey);
         $this->requestStack = $requestStack;
     }
 
