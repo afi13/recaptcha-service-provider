@@ -38,5 +38,10 @@
         "psr-4": {
             "Sergiors\\Silex\\Tests\\": "tests"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "v1.0.x-dev"
+        }
     }
 }
