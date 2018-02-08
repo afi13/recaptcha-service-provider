@@ -9,7 +9,7 @@ final class Recaptcha extends Constraint
     /**
      * @var string
      */
-    public $message = 'This value is already used.';
+    public $message = 'This value should not be blank.';
 
     /**
      * {@inheritdoc}
