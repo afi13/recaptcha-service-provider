@@ -4,3 +4,13 @@
         <script src="https://www.google.com/recaptcha/api.js?hl={{ app.locale }}"></script>
     {% endspaceless %}
 {% endblock %}
+
+{% block recaptcha_row -%}
+    <div class="form-group{% if (not compound or force_error|default(false)) and not valid %} has-error{% endif %}">
+        <div class="{{ block('form_label_class') }}"></div>
+        <div class="{{ block('form_group_class') }}">
+            {{- form_widget(form) -}}
+            {{- form_errors(form) -}}
+        </div>
+{##}</div>
+{%- endblock recaptcha_row %}
